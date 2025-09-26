@@ -6,19 +6,25 @@ export default {
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
-  // pages: [
-  //   {
-  //     name: "Lab 0: Getting Started",
-  //     pages: [
-  //       {name: "Installations", path: "/lab_0/1_INSTALLATIONS"},
-  //       {name: "Github Setup", path: "/lab_0/2_GIT_SETUP"}
-  //     ],
-  //     name: "Lab 1: Intro to Observable Framework",
-  //     pages: [
-  //       {name: "Intro to Observable Framework", path: "/lab_1/1_INTRO_TO_OBSERVABLE_FRAMEWORK"}
-  //     ]
-  //   }
-  // ],
+  pages: [
+    // { name: "Home", path: "/index.md"},
+    { 
+      name: "Lab 0: Getting Started", 
+      open: false, 
+      pages: [
+        { name: "Instructions", path: "/lab_0/instructions"},
+        { name: "Dashboard", path: "/lab_0/index"},
+      ]
+    },
+    { 
+      name: "Lab 1: Intro to Observable Framework", 
+      open: false, 
+      pages: [
+        { name: "Instructions", path: "/lab_1/instructions"},
+        { name: "Dashboard", path: "/lab_1/index"},
+      ]
+    }
+  ],
 
   // Content to add to the head of the page, e.g. for a favicon:
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
