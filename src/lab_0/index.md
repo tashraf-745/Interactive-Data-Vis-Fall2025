@@ -10,10 +10,7 @@ The goals for this tutorial are:
 The assignment requirements are as follows: 
 1. Replicate the local environment created in class on your own computer ([Installations](#installations))
 2. Fork this repository, set up github pages, and initialize your upstream repository ([Github Setup](#github-setup))
-
-To submit your assignment, TODO
-
-
+3. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 0 commons post.
 
 # Installations
 
@@ -34,7 +31,7 @@ The first step is to install all the appropriate software to get our environment
 
 You can read more about `forking`, `syncing`, and the overall github flow [here](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-### 1. On Gitub, within to our [main repository](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git) and [`fork`](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this repository into your own account.
+## 1. On Gitub, within to our [main repository](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git) and [`fork`](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this repository into your own account.
 
 To do this, click on the "fork" button on the top right of this github account.
 
@@ -46,15 +43,7 @@ This creates a clone of our class repository in your own github account. After t
 
 This repository is _your_ personal copy of the existing repository. This will be where you do all your lab work, and will include the deployed links that you will submit when turning in your assignments. 
 
-### 2. Set up your Github Pages for your deployment
-
-We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. 
-
-<!-- To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch") and then your site will be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes. -->
-
-<!-- <img src='../lib/assets/pages.png' width='500px'> -->
-
-### 3. On GitHub, navigate to **your fork** of the repository and clone it to your local computer.
+## 2. On GitHub, navigate to **your fork** of the repository and clone it to your local computer.
 
 To do this, navigate to the folder where you want to save your files (I like to save mine in `Documents/Repositories`). (Hint: `cd` or 'change directory' will help you get there through terminal).
 
@@ -71,7 +60,7 @@ $ git clone https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025
 $ cd Interactive-Data-Vis-Fall2025
 ```
 
-### 4. Set up your local repository so that it links back to the course repository.
+## 3. Set up your local repository so that it links back to the course repository.
 
 We do this so that you can keep your local branch synced up with the main course repository when we update the material. With this set up, you can simply `pull` in the new changes from our original class repository.
 
@@ -103,23 +92,24 @@ $ git remote -v
 # now notice see that we are tracking both the original and your version of the repository
 ```
 
-### 6. Keep your repository [synced](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced).
 
-Make sure to do this before working on new code (before each tutorial) to ensure that you are working off of the latest updates. We may update the course repository at some point in the semester, and this command will update your fork to include the changes we made, including that week's class example or other materials we have added.
+## 4. Set up your Github Pages for your deployment
 
-```sh
-# pulls the upstream changes and stores them in `upstream/main`
-$ git fetch upstream
-```
+We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. 
 
-```sh
-# merges the changes from upstream into your current branch
-$ git merge upstream/main
-```
+To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch"). 
 
-(You can read more information about this [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork))
+<img src='assets/pages.png' width='700px'>
 
-### 7. Push up and deploy your changes
+The workflow code is already included in the main class repository. When you push your changes up to github, then your site will automatically be redeployed and be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. 
+
+You can see all the deployments triggered from pushed in the deployments section of your repository page.
+
+<img src='assets/deployments.png' width='700px'>
+
+*NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
+
+### 5. Push up and deploy your changes
 
 [Note: VS Code has some great [tools](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) built in to help with this process.]
 
@@ -161,9 +151,26 @@ More resources to understand these interfaces:
 * PC: [Command Prompt Basics (youtube tutorial)](https://www.youtube.com/watch?v=QBWX_4ho8D4)
 * [Complete List: Command Line Prompt (CMD)](https://www.codecademy.com/article/command-line-commands)
 
-## Helpful terminal commands for navigation
 
-### Windows Command Prompt (CMD)
+### Keeping your repository synced
+
+As the semester progresses, updates may be pushed to the class repository. The following terminal commands can keep your repo [synced](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced). Make sure to do this before working on new code to ensure that you are working off of the latest updates. 
+
+```sh
+# pulls the upstream changes and stores them in `upstream/main`
+$ git fetch upstream
+```
+
+```sh
+# merges the changes from upstream into your current branch
+$ git merge upstream/main
+```
+
+(You can read more information about this process [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork))
+
+### Helpful terminal commands for navigation
+
+**Windows Command Prompt (CMD)**
 
 - `dir`: List files and folders in current directory
 - `cd [folder]`: Change directory (e.g., cd Documents)
@@ -175,7 +182,7 @@ More resources to understand these interfaces:
 - `copy [source] [destination]`: Copy files
 - `move [source] [destination]`: Move/rename files
 
-### macOS/Linux Terminal
+**macOS/Linux Terminal**
 
 - `ls`: List files and folders (ls -la for detailed view)
 - `cd [folder]`: Change directory
@@ -187,3 +194,4 @@ More resources to understand these interfaces:
 - `rm [filename]`: Delete file (rm -r [folder] for folders)
 - `cp [source] [destination]`: Copy files
 - `mv [source] [destination]`: Move/rename files
+
