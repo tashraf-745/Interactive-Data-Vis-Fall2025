@@ -1,20 +1,24 @@
 # Github Setup
 
-You can read more about `forking`, `syncing`, and our overall github flow [here](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
+You can read more about `forking`, `syncing`, and the overall github flow [here](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-### 1. On Gitub, go to our [Class Repository](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Spring2024.git) and [`fork`](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this repository into your own account.
+### 1. On Gitub, within to our [main repository](https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git) and [`fork`](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this repository into your own account.
 
 To do this, click on the "fork" button on the top right of this github account.
 
-<img src='../lib/assets/fork.png' width='700px'>
+<img src='assets/fork.png' width='700px'>
 
-This creates a clone of our class repository in your own github account. You can see this worked by confirming your github username appears before the repository name:
+This creates a clone of our class repository in your own github account. After the fork, you can see this worked by confirming your github username appears before the repository name:
 
-<img src='../lib/assets/forked.png' width='700px'>
+<img src='assets/forked.png' width='700px'>
+
+This repository is _your_ personal copy of the existing repository. This will be where you do all your lab work, and will include the deployed links that you will submit when turning in your assignments. 
 
 ### 2. Set up your Github Pages for your deployment
 
-To deploy your site on [Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site) you can go to your repository's `Settings` tab and then scroll down to `GitHub Pages` section. Select `main` as source and then your site will be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
+We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. 
+
+To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch") and then your site will be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
 
 <img src='../lib/assets/pages.png' width='500px'>
 
