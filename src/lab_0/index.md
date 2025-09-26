@@ -50,9 +50,9 @@ This repository is _your_ personal copy of the existing repository. This will be
 
 We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. 
 
-To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch") and then your site will be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
+<!-- To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch") and then your site will be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes. -->
 
-<img src='../lib/assets/pages.png' width='500px'>
+<!-- <img src='../lib/assets/pages.png' width='500px'> -->
 
 ### 3. On GitHub, navigate to **your fork** of the repository and clone it to your local computer.
 
@@ -65,22 +65,22 @@ To do this, navigate to the folder where you want to save your files (I like to 
 $ cd PATH_TO_YOUR/FOLDER
 
 # clone your fork to your local computer
-$ git clone https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Spring2024
+$ git clone https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025
 
 # `cd` (change directory) into this repository
-$ cd Interactive-Data-Vis-Spring2024
+$ cd Interactive-Data-Vis-Fall2025
 ```
 
 ### 4. Set up your local repository so that it links back to the course repository.
 
-We do this so that you can keep your local branch synced up with the main course repository in the event that we update the material. That way, every week when we add changes, you can `pull` in the new changes from our original class repository.
+We do this so that you can keep your local branch synced up with the main course repository when we update the material. With this set up, you can simply `pull` in the new changes from our original class repository.
 
 ```sh
 #See current remote branches:
 
 $ git remote -v
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Spring2024 (fetch)
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Spring2024 (push)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (fetch)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (push)
 
 # notice currently this is only tracking your version of the repository.
 ```
@@ -88,17 +88,17 @@ $ git remote -v
 Add an `upstream` remote branch so you can keep yours synced with the main class repository:
 
 ```sh
-$ git remote add upstream https://github.com/InteractiveDataVis/Interactive-Data-Vis-Spring2024.git
+$ git remote add upstream https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git
 ```
 
 Check remote branches again to ensure that the update worked. You should see 2 sets of branches, `origin` which links back to your fork, and `upstream` which references back to the course repository:
 
 ```sh
 $ git remote -v
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Spring2024 (fetch)
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Spring2024 (push)
-> upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Spring2024.git (fetch)
-> upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Spring2024.git (push)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (fetch)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (push)
+> upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git (fetch)
+> upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git (push)
 
 # now notice see that we are tracking both the original and your version of the repository
 ```
