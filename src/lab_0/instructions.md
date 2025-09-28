@@ -21,7 +21,7 @@ The first step is to install all the appropriate software to get our environment
 
 *Note*: while VS code is an application, the other softwares are installed via your terminal or bash. If this is your first time working with your terminal, check out [working with your terminal](#working-with-your-terminal). 
 
-- [VS Code](https://code.visualstudio.com/) - free code editor and IDE (our recommendation). This is an application to view files and code. This application also includes many handy extensions that can help us with [version control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) and [file serving](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+- [VS Code](https://code.visualstudio.com/) - free code editor and IDE (our recommendation). This is an application to view files and code. This application also includes many handy extensions that can help us with [version control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support).
     - You may also use another code editor that has AI integration, like [cursor](https://cursor.com/), but these ai integrations typically require payment after reacting an interaction limit. 
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) version control software. You will also need an account on [Github.com](https://github.com/).
     - if you have a mac, and you have installed Xcode, you _already have git_. You can test this by opening your terminal and running `git --version`.
@@ -39,11 +39,11 @@ You can read more about `forking`, `syncing`, and the overall github flow [here]
 
 To do this, click on the "fork" button on the top right of this github account.
 
-<img src='assets/fork.png' width='700px'>
+<img src='assets/fork.png'>
 
 This creates a clone of our class repository in your own github account. After the fork, you can see this worked by confirming your github username appears before the repository name:
 
-<img src='assets/forked.png' width='700px'>
+<img src='assets/forked.png'>
 
 This repository is _your_ personal copy of the existing repository. This will be where you do all your lab work, and will include the deployed links that you will submit when turning in your assignments. 
 
@@ -102,13 +102,13 @@ We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-gith
 
 To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch"). 
 
-<img src='assets/pages.png' width='700px'>
+<img src='assets/pages.png'>
 
 The workflow code is already included in the main class repository. When you push your changes up to github, then your site will automatically be redeployed and be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. 
 
 You can see all the deployments triggered from pushed in the deployments section of your repository page.
 
-<img src='assets/deployments.png' width='700px'>
+<img src='assets/deployments.png'>
 
 *NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
 
@@ -133,7 +133,7 @@ $ npm run dev
 
 Your terminal will now begin serving the code at the listed url. This can be [`http://127.0.0.1:3000/`](http://127.0.0.1:3000/) or another port (e.g., `:3001`). The listed url in your terminal is where your code is served. Navigate to that link in your browser. You should see the code from the class repository.
 
-<img src='assets/local_serve.png' width='700px'>
+<img src='assets/local_serve.png'>
 
 ## 6. Push up and deploy your changes
 
