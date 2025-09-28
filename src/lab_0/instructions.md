@@ -10,8 +10,14 @@ The goals for this tutorial are:
 The assignment requirements are as follows: 
 1. Replicate the local environment created in class on your own computer ([Installations](#installations))
 2. Fork this repository, set up github pages, and initialize your upstream repository ([Github Setup](#github-setup))
-3. Make a change: TODO
-3. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 0 commons post.
+3. Edit the `index.md` file to include: 
+    1. Markdown: A page header (`#`), some smaller header (`##` or `###`), and some text content (about anything!)
+    2. HTML: A table, an image, and a link
+    3. JS: a button that increments some value which is displayed in the client. 
+4. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 0 commons post.
+
+Bonus: 
+- Try adding an image
 
 ---
 

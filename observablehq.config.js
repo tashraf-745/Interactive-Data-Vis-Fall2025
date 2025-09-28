@@ -7,21 +7,12 @@ export default {
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
-    // { name: "Home", path: "/index.md"},
     { 
       name: "Lab 0: Getting Started", 
       open: false, 
       pages: [
         { name: "Instructions", path: "/lab_0/instructions"},
         { name: "Dashboard", path: "/lab_0/index"},
-      ]
-    },
-    { 
-      name: "Lab 1: Intro to Observable Framework", 
-      open: false, 
-      pages: [
-        { name: "Instructions", path: "/lab_1/instructions"},
-        { name: "Dashboard", path: "/lab_1/index"},
       ]
     }
   ],
