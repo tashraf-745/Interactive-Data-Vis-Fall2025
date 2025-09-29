@@ -1,22 +1,24 @@
-
 # Lab 0: Getting Started
 
-The goals for this tutorial are: 
-* to set up installations for your local development environment
-* to learn how to serve your pages so that you can see/interact with them while you are coding
-* to get comfortable with the Github workflow
-* to set up a public site to showcase your work
+The goals for this tutorial are:
 
-The assignment requirements are as follows: 
+- to set up installations for your local development environment
+- to learn how to serve your pages so that you can see/interact with them while you are coding
+- to get comfortable with the Github workflow
+- to set up a public site to showcase your work
+
+The assignment requirements are as follows:
+
 1. Replicate the local environment created in class on your own computer ([Installations](#installations))
 2. Fork this repository, set up github pages, and initialize your upstream repository ([Github Setup](#github-setup))
-3. Edit the `index.md` file to include: 
-    1. Markdown: A page header (`#`), some smaller header (`##` or `###`), and some text content (about anything!)
-    2. HTML: A table, an image, and a link
-    3. JS: a button that increments some value which is displayed in the client. 
+3. Edit the `index.md` file to include:
+   1. Markdown: A page header (`#`), some smaller header (`##` or `###`), and some text content
+   2. HTML: A table, a list, and an image
+   3. JS: an input that adds
 4. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 0 commons post.
 
-Bonus: 
+Bonus:
+
 - Try adding an image
 
 ---
@@ -25,17 +27,17 @@ Bonus:
 
 The first step is to install all the appropriate software to get our environment together. Please install the following on the computer you intend to complete all the tutorials from.
 
-*Note*: while VS code is an application, the other softwares are installed via your terminal or bash. If this is your first time working with your terminal, check out [working with your terminal](#working-with-your-terminal). 
+_Note_: while VS code is an application, the other softwares are installed via your terminal or bash. If this is your first time working with your terminal, check out [working with your terminal](#working-with-your-terminal).
 
 - [VS Code](https://code.visualstudio.com/) - free code editor and IDE (our recommendation). This is an application to view files and code. This application also includes many handy extensions that can help us with [version control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support).
-    - You may also use another code editor that has AI integration, like [cursor](https://cursor.com/), but these ai integrations typically require payment after reacting an interaction limit. 
+  - You may also use another code editor that has AI integration, like [cursor](https://cursor.com/), but these ai integrations typically require payment after reacting an interaction limit.
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) version control software. You will also need an account on [Github.com](https://github.com/).
-    - if you have a mac, and you have installed Xcode, you _already have git_. You can test this by opening your terminal and running `git --version`.
-    - if you are using a PC, an application called "git bash" will be part of the default git install. You may prefere to use this application rather than the "command prompt" for git commands.
-    - all installation details are included in the [Getting Started Installing Git link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-    - an alternative for both mac and pc is to use the [source control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) options that come with the default VS Code installation. This is often easier than opening terminal each time and offers many of the same actions.
+  - if you have a mac, and you have installed Xcode, you _already have git_. You can test this by opening your terminal and running `git --version`.
+  - if you are using a PC, an application called "git bash" will be part of the default git install. You may prefere to use this application rather than the "command prompt" for git commands.
+  - all installation details are included in the [Getting Started Installing Git link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+  - an alternative for both mac and pc is to use the [source control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) options that come with the default VS Code installation. This is often easier than opening terminal each time and offers many of the same actions.
 - [Node](https://nodejs.org/en/download/) - javascript development software. You can check if the install was succesful by running `node -v` in your command line or terminal. It should return your version number.
-    - Node installation includes node package manager (npm), which we will leverage to install Observable Framework and its dependencies. 
+  - Node installation includes node package manager (npm), which we will leverage to install Observable Framework and its dependencies.
 
 # Github Setup
 
@@ -51,7 +53,7 @@ This creates a clone of our class repository in your own github account. After t
 
 <img src='assets/forked.png'>
 
-This repository is _your_ personal copy of the existing repository. This will be where you do all your lab work, and will include the deployed links that you will submit when turning in your assignments. 
+This repository is _your_ personal copy of the existing repository. This will be where you do all your lab work, and will include the deployed links that you will submit when turning in your assignments.
 
 ## 2. On GitHub, navigate to **your fork** of the repository, clone it to your local computer, and install dependencies.
 
@@ -104,23 +106,23 @@ $ git remote -v
 
 ## 4. Set up your Github Pages for your deployment
 
-We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website. 
+We use [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) to serve our websites publicly. Github Pages is static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
 
-To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch"). 
+To [set up your github pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site), you can go to your repository's `Settings` tab and then scroll down to `Pages` section. Select `Github Actions` as source ("Deploy from a branch").
 
 <img src='assets/pages.png'>
 
-The workflow code is already included in the main class repository. When you push your changes up to github, then your site will automatically be redeployed and be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`. 
+The workflow code is already included in the main class repository. When you push your changes up to github, then your site will automatically be redeployed and be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`.
 
 You can see all the deployments triggered from pushed in the deployments section of your repository page.
 
 <img src='assets/deployments.png'>
 
-*NOTE*: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
+_NOTE_: You must navidate in the URL to a folder with an index.html, or else you will get a 404. This will take a few minutes to update with any pushed changes.
 
 ## 5. Install dependencies and begin local development
 
-The cloned repository already has packages and dependencies set up to get started with Observable Framework. The `package.json` file includes the details of the packages required to begin development. 
+The cloned repository already has packages and dependencies set up to get started with Observable Framework. The `package.json` file includes the details of the packages required to begin development.
 
 To install and get started, run the following in your terminal:
 
@@ -128,7 +130,7 @@ To install and get started, run the following in your terminal:
 # within the repository directory, install the packages
 $ npm install
 
-# attempt to enter development 
+# attempt to enter development
 $ npm run dev
 
 > dev
@@ -169,22 +171,21 @@ $ git push
 
 ### Working with your terminal
 
-Your computer, mac or pc, includes a command line interface that lets you communicate with your operating system. For macs, that app is called "terminal", and on windows machines, its the "command prompt". 
+Your computer, mac or pc, includes a command line interface that lets you communicate with your operating system. For macs, that app is called "terminal", and on windows machines, its the "command prompt".
 
 ![Mac Terminal](assets/mac_terminal.png)
 ![Command Prompt](assets/pc_command_prompt.png)
 
+More resources to understand these interfaces:
 
-More resources to understand these interfaces: 
-* Mac: [What is terminal on mac?](https://support.apple.com/guide/terminal/what-is-terminal-trmld4c92d55/mac)
-* PC: [cmd.exe Wiki](https://en.wikipedia.org/wiki/Cmd.exe)
-* PC: [Command Prompt Basics (youtube tutorial)](https://www.youtube.com/watch?v=QBWX_4ho8D4)
-* [Complete List: Command Line Prompt (CMD)](https://www.codecademy.com/article/command-line-commands)
-
+- Mac: [What is terminal on mac?](https://support.apple.com/guide/terminal/what-is-terminal-trmld4c92d55/mac)
+- PC: [cmd.exe Wiki](https://en.wikipedia.org/wiki/Cmd.exe)
+- PC: [Command Prompt Basics (youtube tutorial)](https://www.youtube.com/watch?v=QBWX_4ho8D4)
+- [Complete List: Command Line Prompt (CMD)](https://www.codecademy.com/article/command-line-commands)
 
 ### Keeping your repository synced
 
-As the semester progresses, updates may be pushed to the class repository. The following terminal commands can keep your repo [synced](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced). Make sure to do this before working on new code to ensure that you are working off of the latest updates. 
+As the semester progresses, updates may be pushed to the class repository. The following terminal commands can keep your repo [synced](https://help.github.com/en/github/getting-started-with-github/fork-a-repo#keep-your-fork-synced). Make sure to do this before working on new code to ensure that you are working off of the latest updates.
 
 ```sh
 # pulls the upstream changes and stores them in `upstream/main`
@@ -224,4 +225,3 @@ $ git merge upstream/main
 - `rm [filename]`: Delete file (rm -r [folder] for folders)
 - `cp [source] [destination]`: Copy files
 - `mv [source] [destination]`: Move/rename files
-
