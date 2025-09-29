@@ -14,22 +14,18 @@ The assignment requirements are as follows:
 3. Edit the `index.md` file to include:
    1. Markdown: A page header (`#`), some smaller header (`##` or `###`), and some text content
    2. HTML: A table, a list, and an image
-   3. JS: an input that adds
+   3. JS: include at least one [`Input` element](https://observablehq.com/framework/inputs/) that changes a visible reference on the dashboard
 4. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 0 commons post.
-
-Bonus:
-
-- Try adding an image
 
 ---
 
 # Installations
 
-The first step is to install all the appropriate software to get our environment together. Please install the following on the computer you intend to complete all the tutorials from.
+The first step is to install all the appropriate software to get our environment together. Please install the following on the computer you intend to complete all the labs from.
 
 _Note_: while VS code is an application, the other softwares are installed via your terminal or bash. If this is your first time working with your terminal, check out [working with your terminal](#working-with-your-terminal).
 
-- [VS Code](https://code.visualstudio.com/) - free code editor and IDE (our recommendation). This is an application to view files and code. This application also includes many handy extensions that can help us with [version control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support).
+- [VS Code](https://code.visualstudio.com/) - free code editor and IDE (my recommendation). This is an application to view files and code. This application also includes many handy extensions that can help us with [version control](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support).
   - You may also use another code editor that has AI integration, like [cursor](https://cursor.com/), but these ai integrations typically require payment after reacting an interaction limit.
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) version control software. You will also need an account on [Github.com](https://github.com/).
   - if you have a mac, and you have installed Xcode, you _already have git_. You can test this by opening your terminal and running `git --version`.
@@ -57,7 +53,11 @@ This repository is _your_ personal copy of the existing repository. This will be
 
 ## 2. On GitHub, navigate to **your fork** of the repository, clone it to your local computer, and install dependencies.
 
-To do this, navigate to the folder where you want to save your files (I like to save mine in `Documents/Repositories`). (Hint: `cd` or 'change directory' will help you get there through terminal).
+To do this, navigate to the folder where you want to save your files (I like to save mine in `Documents/Repositories`). (Hint: `cd` or 'change directory' will help you get there through terminal). Then use the `git clone` command and paste the git url from the big green "code" button:
+
+<img src="assets/clone.png">
+
+Copy the link inside there and use it after the `git clone` command in the terminal details below:
 
 ```sh
 # from Terminal:
@@ -80,8 +80,8 @@ We do this so that you can keep your local branch synced up with the main course
 #See current remote branches:
 
 $ git remote -v
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (fetch)
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (push)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025.git (fetch)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025.git (push)
 
 # currently this is only tracking your version of the repository
 ```
@@ -96,8 +96,8 @@ Check remote branches again to ensure that the update worked. You should see 2 s
 
 ```sh
 $ git remote -v
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (fetch)
-> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025 (push)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025.git (fetch)
+> origin	https://github.com/[YOUR_USERNAME]/Interactive-Data-Vis-Fall2025.git (push)
 > upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git (fetch)
 > upstream	https://github.com/InteractiveDataVis/Interactive-Data-Vis-Fall2025.git (push)
 
@@ -114,7 +114,7 @@ To [set up your github pages site](https://docs.github.com/en/pages/getting-star
 
 The workflow code is already included in the main class repository. When you push your changes up to github, then your site will automatically be redeployed and be avallable at `https://[YOUR_USERNAME].github.io/[YOUR_REPOSITORY_NAME]/`.
 
-You can see all the deployments triggered from pushed in the deployments section of your repository page.
+Once you have pushed a change, you can see all the deployments triggered from pushed in the deployments section of your repository page. These will not be triggered until you make a change to your repo and push it back up to github.
 
 <img src='assets/deployments.png'>
 
@@ -141,11 +141,24 @@ $ npm run dev
 
 Your terminal will now begin serving the code at the listed url. This can be [`http://127.0.0.1:3000/`](http://127.0.0.1:3000/) or another port (e.g., `:3001`). The listed url in your terminal is where your code is served. Navigate to that link in your browser. You should see the code from the class repository.
 
+To exit out of this live updating serve, in the terminal window in which the serve is taking place, type `CNTRL` or `CMMD` + `c`
+
 <img src='assets/local_serve.png'>
 
 ## 6. Push up and deploy your changes
 
 When you have made a change that you want to keep, you can commit your changes. VS Code has some great [tools](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support) built in to help with this process, which are a bit easier, or you can leverage the command line.
+
+**To use VS Code tools**:
+
+<img src='assets/version_control.png' width="250">
+
+1. Open the "version control" panel on the left side of your application. You should see a list of changes and a place to add a comment.
+2. Click on the "+" next to each change to add it to the staged changes.
+3. Add a comment about your work, then click "commit". Just because you have committed the changes does not mean they are pushed to your repository yet.
+4. Click the three dots and click "push" to send your commit to github.
+
+**To use the command line**:
 
 ```sh
 # see which files have changes associated with them
@@ -153,6 +166,7 @@ $ git status
 
 # add, or 'stage', files or folders for this commit
 $ git add [path/fileName]
+# you can also do the shorthand git add . to add all files
 
 # commit the files with a brief explanation of what you are changing
 # ex: `git commit -m 'add bar chart legend`
