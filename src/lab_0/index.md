@@ -82,4 +82,8 @@ const userRegion = view(Inputs.select(regions, {
 
 You have selected the region: ${userRegion.name}
 
+<<<<<<< HEAD
 Impact: ${userRegion.impact}
+=======
+Impact: ${userRegion.impact}
+>>>>>>> 2e64c7995df22a28f69f1773b802abf3ea903dc6
