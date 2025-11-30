@@ -17,12 +17,37 @@ export default {
     },
     {
       name: "Lab 1: Prolific Pollinators",
-      open: true,
+      open: false,
       pages: [
         { name: "Instructions", path: "/lab_1/readme" },
         { name: "Dashboard", path: "/lab_1/index" },
       ],
     },
+      {
+      name: "Lab 2: Subway Staffing",
+      open: false,
+      pages: [
+        { name: "Instructions", path: "/lab_2/readme" },
+        { name: "Dashboard", path: "/lab_2/index" },
+      ],
+    },
+    {
+      name: "Lab 3: Mayoral Mystery",
+      open: true,
+      pages: [
+        { name: "Instructions", path: "/lab_3/readme" },
+        { name: "Dashboard", path: "/lab_3/index" },
+      ],
+    },
+    {
+      name: "Lab 4: Clearwater Crisis",
+      open: true,
+      pages: [
+        { name: "Instructions", path: "/lab_4/readme" },
+        { name: "Dashboard", path: "/lab_4/index" },
+      ],
+    }
+
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
